@@ -9,8 +9,18 @@ table {
     overflow: hidden; /* Ensure rounded corners are applied */
     border: 1px solid #ccc; /* Add a border style to the table */
 }
-
-
+.address {
+    font-size: 15px;
+    background-color: #9d5dd1;
+}
+header {
+    background-image: url('https://www.warpaintmag.com/wp-content/uploads/2018/01/cosmic-purple-header-300x125.png');
+    background-size: 100% auto;
+    font-size: 60px;
+    color: white;
+    font-family: 'Aleo';
+    /* margin-top: 3px; */
+}
 
 .recent-form {
     white-space: nowrap; /* Prevent wrapping of the content */
