@@ -9,6 +9,12 @@ table {
     overflow: hidden; /* Ensure rounded corners are applied */
     border: 1px solid #ccc; /* Add a border style to the table */
 }
+
+.bigtable{
+    position: relative;
+}
+
+
 .address {
     font-size: 15px;
     background-color: #9d5dd1;
@@ -26,6 +32,14 @@ header {
     padding-left: 15px;
 }
 
+
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
 .recent-form {
     white-space: nowrap; /* Prevent wrapping of the content */
     overflow-x: auto; /* Add horizontal scrollbar when content overflows */
