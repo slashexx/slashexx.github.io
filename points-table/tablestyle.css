@@ -3,37 +3,79 @@
 
 table {
     width: 70%;
-    margin: 0 auto;
+    margin: 50px auto;
     /* border-collapse: collapse; */
     border-radius: 10px; /* Adjust the radius as needed */
     overflow: hidden; /* Ensure rounded corners are applied */
     border: 1px solid #ccc; /* Add a border style to the table */
 }
 
+.bigtable{
+    position: relative;
+}
 
+
+.address {
+    font-size: 15px;
+    background-color: #9d5dd1;
+    padding-left: 15px;
+    /* margin-left: 10px; */
+}
+header {
+    background-image: url('https://www.warpaintmag.com/wp-content/uploads/2018/01/cosmic-purple-header-300x125.png');
+    background-size: 100% auto;
+    /* margin-left: 10px; */
+    font-size: 50px;
+    color: white;
+    font-family: 'Aleo';
+    /* margin-top: 3px; */
+    padding-left: 15px;
+}
+
+
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+.recent-form {
+    white-space: nowrap; /* Prevent wrapping of the content */
+    overflow-x: auto; /* Add horizontal scrollbar when content overflows */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
 
 th, td {
     border-collapse: collapse;
     padding: 8px;
-    text-align: center;
+    text-align: left;
     font-family: "Aleo";
 }
 th {
     background-color: #f2f2f2;
+    text-align: left;
 }
+/* .circled-letter.recent-form span {
+    padding-right: 5px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+} */
+
 
 .team-logo img {
     height: 1em; /* Set the height to match the text size */
     width: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Align the image vertically */
     margin-right: 5px; /* Add some margin to separate image from text */
+    border-radius: 10px;
 }
 
 .circled-letter {
     /* display: inline-block; */
     display: inline;
     position: relative;
-    left: 2rem;
+    /* left: 2rem; */
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -43,12 +85,27 @@ th {
     font-weight: bold;
 }
 
+.green, .red {
+    border: 1.5px solid; /* Set border width and style */
+    border-radius: 50%; /* Make the border circular */
+    width: 22px; /* Set a fixed width */
+    height: 22px; /* Set a fixed height */
+    display: inline-block; /* Ensure elements are displayed inline */
+    text-align: center; /* Center the content horizontally */
+    line-height: 20px; /* Center the content vertically */
+    padding: 1px;
+}
+
 .green {
+    /* border: 1.5px solid green; */
+    
     border-color: green;
     color: green;
+    /* padding: 3px 0 0px 3px ; */
 }
 
 .red {
+    /* border : 1.5px solid red;*/
     border-color: red;
     color: red;
 }
