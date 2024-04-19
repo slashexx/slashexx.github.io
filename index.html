@@ -25,6 +25,7 @@
             position: relative;
             max-width: 100%; /* Adjust the maximum width of the image */
             height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add margin at the bottom */
         }
         
         .image-text {
@@ -34,7 +35,7 @@
             padding: 20px; /* Add padding for better readability */
             color: white;
             font-family: 'Oswald', sans-serif; /* Specify the custom font */
-            font-size: 60px;
+            font-size: 55px;
             font-weight: bold;
             text-align: left;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
@@ -44,6 +45,28 @@
         .navbar-nav .nav-link {
             color: white;
         }
+
+        /* Remove shadow from all cards except the first one */
+        .card:not(:first-child) {
+            box-shadow: none !important;
+        }
+
+        /* Add margin between cards */
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Change background color to black */
+        body {
+            background-color: black;
+            color: white; /* Change text color to white */
+        }
+
+        /* Change text color of card-text to purple */
+        .card-text {
+            color: rgb(91, 51, 161); /* Change text color to purple */
+        }
+        
         .navbar-nav .nav-link {
             padding: 0.5rem 1rem;
             transition: background-color 0.3s; /* Add transition for smoother effect */
@@ -81,7 +104,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="points-table/men.html">Points Table</a>
@@ -111,7 +134,7 @@
   <!-- Image below navbar -->
   <div class="image-container">
     <img src="pxfuel copy 2.jpg" alt="Description of the image" style="max-width: 100%; height: auto;">
-    <div class="image-text">WHERE TALENT<br> MEETS OPPORTUNITY.</div>
+    <div class="image-text">WHERE TALENT<br> MEETS OPPERTUNITY.</div>
   </div>
 <!-- ======= -->
 <!--     <title>Clonewars
