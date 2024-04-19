@@ -7,7 +7,7 @@ table {
     /* border-collapse: collapse; */
     border-radius: 10px; /* Adjust the radius as needed */
     overflow: hidden; /* Ensure rounded corners are applied */
-    border: 1px solid #ccc; /* Add a border style to the table */
+    border: 1px solid #9120dd; /* Add a border style to the table */
 }
 
 .bigtable{
