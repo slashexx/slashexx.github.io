@@ -1,0 +1,13 @@
+body {
+    background-color: #071026;
+    background-image: url(https://www.iplt20.com/assets/images/teams-tata-logo-bg.svg);
+    background-size: cover;
+}
+.IPL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ipllogo {
+    height: 100px;
+}
