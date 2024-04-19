@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    /* border-collapse: collapse; */
+    border-radius: 10px; /* Adjust the radius as needed */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    border: 1px solid #ccc; /* Add a border style to the table */
+}
+
+
+
+th, td {
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+    font-family: "Aleo";
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.team-logo img {
+    height: 1em; /* Set the height to match the text size */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image vertically */
+    margin-right: 5px; /* Add some margin to separate image from text */
+}
+
+.circled-letter {
+    /* display: inline-block; */
+    display: inline;
+    position: relative;
+    left: 2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.green {
+    border-color: green;
+    color: green;
+}
+
+.red {
+    border-color: red;
+    color: red;
+}
