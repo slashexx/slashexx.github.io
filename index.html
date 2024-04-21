@@ -1,133 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Clonewars - IPL</title>
-    <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+  <title>Clonewars - IPL</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
-        .navbar {
-            background-color: rgb(91, 51, 161); /* Changing background color to purple */
-            padding-top: 5px; /* Decrease vertical padding */
-            padding-bottom: 5px; /* Decrease vertical padding */
-        }
+    .navbar {
+      background-color: rgb(91, 51, 161);
+      /* Changing background color to purple */
+      padding-top: 5px;
+      /* Decrease vertical padding */
+      padding-bottom: 5px;
+      /* Decrease vertical padding */
+    }
 
-        .navbar-brand img {
-            height: 30px; /* Adjust logo height as needed */
-        }
+    .navbar-brand img {
+      height: 30px;
+      /* Adjust logo height as needed */
+    }
 
-        /* Adjust size of the image below navbar */
-        .image-container {
-            position: relative;
-            max-width: 100%; /* Adjust the maximum width of the image */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Add margin at the bottom */
-        }
-        
-        .image-text {
-            position: absolute;
-            bottom: 0; /* Align text to the bottom */
-            left: 0; /* Align text to the left */
-            padding: 20px; /* Add padding for better readability */
-            color: white;
-            font-family: 'Oswald', sans-serif; /* Specify the custom font */
-            font-size: 55px;
-            font-weight: bold;
-            text-align: left;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-        }
-        
-        /* Change font color of navbar links to white */
-        .navbar-nav .nav-link {
-            color: white;
-        }
+    /* Adjust size of the image below navbar */
+    .image-container {
+      position: relative;
+      max-width: 100%;
+      /* Adjust the maximum width of the image */
+      height: auto;
+      /* Maintain aspect ratio */
+      margin-bottom: 20px;
+      /* Add margin at the bottom */
+    }
 
-        /* Remove shadow from all cards except the first one */
-        .card:not(:first-child) {
-            box-shadow: none !important;
-        }
+    .image-text {
+      position: absolute;
+      bottom: 0;
+      /* Align text to the bottom */
+      left: 0;
+      /* Align text to the left */
+      padding: 20px;
+      /* Add padding for better readability */
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      /* Specify the custom font */
+      font-size: 55px;
+      font-weight: bold;
+      text-align: left;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      /* Add text shadow for better readability */
+    }
+    .custom-card{
+      background-color: #373a3d !important;
+    }
+    /* Change font color of navbar links to white */
+    .navbar-nav .nav-link {
+      color: white;
+    }
 
-        /* Add margin between cards */
-        .card {
-            margin-bottom: 20px;
-        }
+    /* Remove shadow from all cards except the first one */
+    .card:not(:first-child) {
+      box-shadow: none !important;
+    }
 
-        /* Change background color to black */
-        body {
-            background-color: black;
-            color: white; /* Change text color to white */
-        }
+    /* Add margin between cards */
+    .card {
+      margin-bottom: 20px;
+    }
 
-        /* Change text color of card-text to purple */
-        .card-text {
-            color: rgb(91, 51, 161); /* Change text color to purple */
-        }
-        
-        .navbar-nav .nav-link {
-            padding: 0.5rem 1rem;
-            transition: background-color 0.3s; /* Add transition for smoother effect */
-        }
+    /* Change background color to black */
+    body {
+      background-color: black;
+      color: white;
+      /* Change text color to white */
+    }
 
-        .navbar-nav .nav-link:hover,
-        .navbar-nav .nav-item:hover .dropdown-menu {
-            background-color: rgba(0, 0, 0, 0.1); /* Change background color on hover */
-        }
+    /* Change text color of card-text to purple */
+    .card-text {
+      color: rgb(91, 51, 161);
+      /* Change text color to purple */
+    }
 
-        .navbar-nav .dropdown-menu {
-            margin-top: 0; /* Remove default margin */
-            border: none; /* Remove default border */
-            box-shadow: none; /* Remove default box shadow */
-            transition: none; /* Remove transition to make dropdown appear instantly */
-        }
+    .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s;
+      /* Add transition for smoother effect */
+    }
 
-        .navbar-nav .dropdown-menu a {
-            padding: 0.5rem 1rem; /* Add padding to dropdown items */
-            color: black; /* Change dropdown item color */
-        }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-item:hover .dropdown-menu {
+      background-color: rgba(0, 0, 0, 0.1);
+      /* Change background color on hover */
+    }
 
-        .navbar-nav .dropdown-menu a:hover {
-            background-color: rgba(0, 0, 0, 0.1); /* Change background color on hover */
-        }
-    </style>
+    .navbar-nav .dropdown-menu {
+      margin-top: 0;
+      /* Remove default margin */
+      border: none;
+      /* Remove default border */
+      box-shadow: none;
+      /* Remove default box shadow */
+      transition: none;
+      /* Remove transition to make dropdown appear instantly */
+    }
+
+    .navbar-nav .dropdown-menu a {
+      padding: 0.5rem 1rem;
+      /* Add padding to dropdown items */
+      color: black;
+      /* Change dropdown item color */
+    }
+
+    .navbar-nav .dropdown-menu a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      /* Change background color on hover */
+    }
+  </style>
 </head>
-<body>
+
+<body style="overflow-x: hidden;">
   <nav class="navbar navbar-expand-lg"> <!-- Removed bg-primary -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="lazy" src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><img class="lazy"
+          src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="points-table/men.html">Points Table</a>
+            <a class="nav-link" style="color: aliceblue;" href="points-table/men.html">Points Table</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="stats/index.html" aria-disabled="true">Stats</a>
+            <a class="nav-link" style="color: aliceblue;" href="stats/index.html" aria-disabled="true">Stats</a>
           </li>
           <li class="nav-item Teams">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="Teams" aria-expanded="false">
-              Dropdown
+            <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" role="button" data-bs-toggle="Teams"
+              aria-expanded="false">
+              Videos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Highlights</a></li>
+              <li><a class="dropdown-item" href="#">Past matches</a></li>
+              <li><a href="#" class="dropdown-item">Review</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Previous year history</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="teams/index.html">Teams</a>
+            <a style="color: aliceblue;" class="nav-link" href="teams/index.html">Teams</a>
           </li>
-          
-          
+
+
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -138,68 +172,84 @@
   </nav>
   <!-- Image below navbar -->
   <div class="image-container">
-    <img src="pxfuel copy 2.jpg" alt="Description of the image" style="max-width: 100%; height: auto;">
-    <div class="image-text">WHERE TALENT<br> MEETS OPPORTUNITY.</div>
+    <div class="carousel">
+      <div class="slides">
+        <img src="pxfuel copy 2.jpg" alt="Trophy img" style="max-width: 100%; height: 94vh;">
+        <img src="https://cdn.discordapp.com/attachments/776311454235754528/1231549875565367429/suryakumar.jpg?ex=66375d33&is=6624e833&hm=07c45d2a80343b983c374b28036e94b5de16ad693d858244c50ed4db6efc01a7&" style="max-width: 100%; height: 94vh;">
+        <img src="https://cdn.discordapp.com/attachments/776311454235754528/1231549874726506606/peakpxdhoni.jpg?ex=662639b3&is=6624e833&hm=23e173d755ecea727cca7e6d855f839cc64a0a07cdb9a413dbc07e5ff6ac039a&" alt="Kohli hit" style="max-width: 100%; height: 94vh;">
+        <img src="https://cdn.discordapp.com/attachments/776311454235754528/1231549874126848071/peakpx.jpg?ex=66375d33&is=6624e833&hm=dc1285e575e78fe5b300f38c4b0bc5d6495db1262445d38863fb6ab995616c83&" alt="" srcset="">
+
+      </div>
+
+      <button style="padding-left: 10px;" class="prev">❮</button>
+      <button style="z-index: 100; margin-right: 10px;" class="next">❯</button>
+    </div>
+
+
+
+
+    <div style="margin-left: 25px;" class="image-text">WHERE <br> TALENT<br> MEETS <br>OPPORTUNITY.</div>
   </div>
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-          <!-- Image -->
-          <img src="basketball-ball-hand-drawn-team-sport-symbol-isolated-white-background_80590-13018.jpg">
-          <div class="card-body">
-            <p class="card-text">TEAMS</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
+  <div style="margin-bottom: 100px;" class="container"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card custom-card shadow-sm">
+        <!-- Image -->
+        <a id='5oYl_2a1SURTU0n80ZaMxQ' class='gie-slideshow' href='http://www.gettyimages.com/detail/1494302960' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'5oYl_2a1SURTU0n80ZaMxQ',sig:'xx6B7mpoAR6l6emxLeruHo3Exqg5XA4N7PigUtLcIHA=',w:'594px',h:'396px',items:'1494302960,2115797141,2110560003,2118338427,1250851769',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script><div class="card-body">
+          <p style="color: antiquewhite;" class="card-text"><a href="/clone-wars/teams/index.html" style="color: antiquewhite; text-decoration: none;">Teams</a>
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
             </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="col">
-        <div class="card shadow-sm">
-          <!-- Image -->
-          <img src="depositphotos_239885810-stock-illustration-bar-graph-icon-trendy-bar.jpg" class="card-img-top" alt="Image description" style="width: 100%; height: 225px; object-fit: cover;">
-          <div class="card-body">
-            <p class="card-text">STATS.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="col">
-        <div class="card shadow-sm">
-          <!-- Image -->
-          <img src="images.png" class="card-img-top" alt="Image description" style="width: 100%; height: 225px; object-fit: cover;">
-          <div class="card-body">
-            <p class="card-text" style="color: rgb(91, 51, 161);">POINTS TABLE</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <!-- <small class="text-body-secondary">9 mins</small> -->
           </div>
         </div>
       </div>
     </div>
+  
+    <div class="col">
+      <div class="card custom-card shadow-sm">
+        <!-- Image -->
+        <iframe style="width: auto; height: 225px;" src="https://www.youtube.com/embed/nh2q8zyy3H0?autoplay=1" frameborder="0" ></iframe>
+
+        <div class="card-body">
+          <p style="color: antiquewhite !important;" class="card-text">Highlights</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Youtube</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">JioTV</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card custom-card shadow-sm">
+        <!-- Image -->
+        <a id='DXSC0PsGSIJW0CosYTcTgg' class='gie-slideshow' href='http://www.gettyimages.com/detail/2147829869' target='_blank' style='background-color: #585757;color:#585757;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'></a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'DXSC0PsGSIJW0CosYTcTgg',sig:'7WvEI-z_4uwMaxst_68Y7d8U88gn71f5PiDaF6NOHl0=',w:'594px',h:'396px',items:'2147829869,1492960987,2139220909,1148242503',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script><div class="card-body">
+          <p class="card-text" style="color: rgb(250, 250, 250);">Pictures</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+  
+            </div>
+            <!-- <small class="text-body-secondary">9 mins</small> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    </div>
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
         <div class="col-12 col-md">
-          ><img class="lazy" src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt="">
-          <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+          <img class="lazy" style="padding-left: 40px;" src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt="">
+          <small style="padding-left: 50px; color: antiquewhite !important;" class="d-block mb-3 text-body-secondary">© 2017–2024</small>
         </div>
         <div class="col-6 col-md">
           <h5>Features</h5>
@@ -233,8 +283,12 @@
       </div>
     </footer>
   </div>
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-</body> 
+</body>
+
 </html>

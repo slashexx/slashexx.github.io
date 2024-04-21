@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body::-webkit-scrollbar{
+    width: 0.35rem;
+}
 
+body::-webkit-scrollbar-track{
+    background: #b2b2da;
+}
+body::-webkit-scrollbar-thumb{
+    background:#6649b8;
+}
+
+body {
+    overflow-x: hidden;
+}
 table {
     width: 70%;
     margin: 50px auto;
@@ -34,12 +47,14 @@ header {
 
 
 
-.dropdown {
-    position: absolute;
+.dropdowns {
+    position:absolute;
     display: inline-block;
     top: 0;
     left: 0;
 }
+
+
 .recent-form {
     white-space: nowrap; /* Prevent wrapping of the content */
     overflow-x: auto; /* Add horizontal scrollbar when content overflows */
@@ -62,6 +77,30 @@ th {
     border-radius: 50%;
 } */
 
+.bigtable {
+    position: relative;
+}
+
+.table-container {
+    position: relative;
+}
+
+.dropdowns {
+    position: absolute;
+    top: -40px; /* Shift the dropdowns upwards */
+    /* right: 100px; Move the dropdowns further to the right */
+    left: 200px;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+}
 
 .team-logo img {
     height: 1em; /* Set the height to match the text size */
@@ -94,6 +133,16 @@ th {
     text-align: center; /* Center the content horizontally */
     line-height: 20px; /* Center the content vertically */
     padding: 1px;
+}
+
+footer {
+    background-color: black;
+    /* position: absolute;
+    top: 100%; */
+}
+
+.non-table  {
+    background-color: black;
 }
 
 .green {

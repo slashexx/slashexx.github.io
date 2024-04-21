@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .top{
+
+        body::-webkit-scrollbar {
+            width: 0.35rem;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #b2b2da;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #6649b8;
+        }
+
+        .top {
             color: white;
             padding: 40px;
             background-color: #1e263d;
         }
-        td{
+
+        td {
             padding: 25px;
-           color: blanchedalmond;
+            color: blanchedalmond;
             background-color: black;
-          
-            
+
+
         }
-        tr{
+
+        tr {
             border-bottom: 1px solid white;
         }
+
         table {
             border: 2px solid black;
 
             border-collapse: collapse;
             width: 100%;
         }
-        .dropdown{
-          
+
+        .dropdown {
+
             padding: 0 30px 0 30px;
             background-color: black;
             /* padding-right: 30; */
         }
+
         /* {
             border: 2px solid white;
         } */
-        .foot{
+        .foot {
             color: beige;
             background-color: black;
             padding: 25px;
         }
-      
-       
-       
-        
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
 </head>
-<body>
+
+<body style="background-color: black; overflow-x: hidden;">
     <!-- <img src="Screenshot 2024-04-19 134418.png" width="1500" height="50" alt=""> -->
     <!-- <table>
         
@@ -59,65 +77,66 @@
             <th>Awards</th>
             <th>Records</th>
         </tr> -->
-        <p>
-            
-            <img src="Screenshot 2024-04-19 134418.png" style="width: 100%;" alt="">
+    <p>
 
-        </p>
-    
+        <img src="Screenshot 2024-04-19 134418.png" style="width: 100%;" alt="">
+
+    </p>
+
     </table>
     <form action="post"></form>
-    
+
     <div class="dropdown">
-      
-        <label for="SEASON"  ></label>
-      <select name="My season" id="SEASON">
-        <option value="SEASON" >SEASON 2024</option>
-        <option value="SEASON">SEASON 2023</option>
-        <option value="SEASON">SEASON 2022</option>
-        <option value="SEASON">SEASON 2021</option>
-        <option value="SEASON">SEASON 2020</option>
-        <option value="SEASON">SEASON 2019</option>
-      </select>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    
 
-    
+        <label for="SEASON"></label>
+        <select name="My season" id="SEASON">
+            <option value="SEASON">SEASON 2024</option>
+            <option value="SEASON">SEASON 2023</option>
+            <option value="SEASON">SEASON 2022</option>
+            <option value="SEASON">SEASON 2021</option>
+            <option value="SEASON">SEASON 2020</option>
+            <option value="SEASON">SEASON 2019</option>
+        </select>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+
         <label for="CAP"></label>
-      <select name="My caps" id="CAP">
-        <option value="ORANGE CAP">ORANGE CAP</option>
-        <option value="RuPay On-The-Go 4s Of The Season">RuPay On-The-Go 4s Of The Season</option>
-        <option value="Most Fours (Innings)">Most Fours (Innings)</option>
-        <option value="Angel One Super Six Of The Season">Angel One Super Six Of The Season</option>
-        <option value="Most Sixes (Innings)">Most Sixes (Innings)</option>
-        <option value="Most Fifties">Most Fifties</option>
-        <option value="Most Centuries">Most Centuries</option>
-      </select>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <select name="My caps" id="CAP">
+            <option value="ORANGE CAP">ORANGE CAP</option>
+            <option value="RuPay On-The-Go 4s Of The Season">RuPay On-The-Go 4s Of The Season</option>
+            <option value="Most Fours (Innings)">Most Fours (Innings)</option>
+            <option value="Angel One Super Six Of The Season">Angel One Super Six Of The Season</option>
+            <option value="Most Sixes (Innings)">Most Sixes (Innings)</option>
+            <option value="Most Fifties">Most Fifties</option>
+            <option value="Most Centuries">Most Centuries</option>
+        </select>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-      <label for="TEAM"></label>
-      <select name="My team" id="TEAM">
-        <option value=" RR" ><a href="https://www.rajasthanroyals.com/">RR</a>  </option>
-        <option value="CSK">CSK</option>
-        <option value="RCB">RCB</option>
-        <option value="SRH">SRH</option>
-        <option value="KKR">KKR</option>
-        <option value="MI">MI</option>
-      </select>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="TEAM"></label>
+        <select name="My team" id="TEAM">
+            <option value=" RR"><a href="https://www.rajasthanroyals.com/">RR</a> </option>
+            <option value="CSK">CSK</option>
+            <option value="RCB">RCB</option>
+            <option value="SRH">SRH</option>
+            <option value="KKR">KKR</option>
+            <option value="MI">MI</option>
+        </select>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-      <label for="PLAYER"></label>
-      <select name="My PLAYERS" id="PLAYER">
-        <option value="All Players">All Players</option>
-        <option value="Indians">Indians</option>
-        <option value="Overseas">Overseas</option>
-      </select>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="PLAYER"></label>
+        <select name="My PLAYERS" id="PLAYER">
+            <option value="All Players">All Players</option>
+            <option value="Indians">Indians</option>
+            <option value="Overseas">Overseas</option>
+        </select>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-      <label for="NAME"></label>
-     <input type="text" name="My Role" id="NAME" placeholder="Search By Player Name" >
+        <label for="NAME"></label>
+        <input type="text" name="My Role" id="NAME" placeholder="Search By Player Name">
 
-     <img src="https://www.iplt20.com/assets/images/IPL_LOGO_CORPORATE_2024.png" alt="" style="height: 7em; width: fit-content;">
+        <img src="https://www.iplt20.com/assets/images/IPL_LOGO_CORPORATE_2024.png" alt=""
+            style="height: 7em; width: fit-content;">
     </div>
 
 
@@ -137,12 +156,13 @@
             <th>50</th>
             <th>4s</th>
             <th>6s</th>
-            
+
         </tr>
         <tr>
             <td>1</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png?v=4" alt="" style="height: 5em;" >Virat kohli </td>
-            
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png?v=4" alt=""
+                    style="height: 5em;">Virat kohli </td>
+
             <td>7</td>
             <td>7</td>
             <td>2</td>
@@ -155,11 +175,12 @@
             <td>2</td>
             <td>35</td>
             <td>14</td>
-           
+
         </tr>
         <tr>
             <td>2</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Riyan%20Parag.png?v=4" alt="" style="height: 5em;">Riyan Parag</td>
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Riyan%20Parag.png?v=4" alt=""
+                    style="height: 5em;">Riyan Parag</td>
             <td>7</td>
             <td>7</td>
             <td>2</td>
@@ -175,7 +196,8 @@
         </tr>
         <tr>
             <td>3</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Rohit%20Sharma.png?v=4" alt="" style="height: 5em;">Rohit Sharma</td>
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Rohit%20Sharma.png?v=4" alt=""
+                    style="height: 5em;">Rohit Sharma</td>
             <td>7</td>
             <td>7</td>
             <td>1</td>
@@ -191,7 +213,8 @@
         </tr>
         <tr>
             <td>4</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Sunil%20Narine.png?v=4" alt="" style="height: 5em;">Sunil Narine</td>
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Sunil%20Narine.png?v=4" alt=""
+                    style="height: 5em;">Sunil Narine</td>
             <td>6</td>
             <td>6</td>
             <td>0</td>
@@ -207,7 +230,8 @@
         </tr>
         <tr>
             <td>5</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Sanju%20Samson.png?v=4" alt="" style="height: 5em;">Sanju Samson</td>
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Sanju%20Samson.png?v=4" alt=""
+                    style="height: 5em;">Sanju Samson</td>
             <td>7</td>
             <td>7</td>
             <td>2</td>
@@ -223,7 +247,8 @@
         </tr>
         <tr>
             <td>6</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Shubman%20Gill.png?v=4" alt="" style="height: 5em;">Shubman Gill</td>
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Shubman%20Gill.png?v=4" alt=""
+                    style="height: 5em;">Shubman Gill</td>
             <td>7</td>
             <td>7</td>
             <td>1</td>
@@ -239,8 +264,9 @@
         </tr>
         <tr>
             <td>7</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Heinrich%20Klaasen.png?v=4" alt="" style="height: 5em;">Heinrich Klaasen</td>
-            
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Heinrich%20Klaasen.png?v=4" alt=""
+                    style="height: 5em;">Heinrich Klaasen</td>
+
             <td>6</td>
             <td>6</td>
             <td>2</td>
@@ -256,8 +282,9 @@
         </tr>
         <tr>
             <td>8</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Jos%20Buttler.png?v=4" alt="" style="height: 5em;">Jos Buttler</td>
-           
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Jos%20Buttler.png?v=4" alt=""
+                    style="height: 5em;">Jos Buttler</td>
+
             <td>6</td>
             <td>6</td>
             <td>2</td>
@@ -273,8 +300,9 @@
         </tr>
         <tr>
             <td>9</td>
-            <td><img src="https://scores.iplt20.com/ipl/playerimages/Shivam%20Dube.png?v=4" alt="" style="height: 5em;">Shivam Dube</td>
-            
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Shivam%20Dube.png?v=4" alt=""
+                    style="height: 5em;">Shivam Dube</td>
+
             <td>6</td>
             <td>6</td>
             <td>2</td>
@@ -287,42 +315,65 @@
             <td>2</td>
             <td>20</td>
             <td>6</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td><img src="https://scores.iplt20.com/ipl/playerimages/Sai%20Sudharsan.png?v=4" alt="" style="height: 5em;">Sai Sudharsan</td>
-                
-                <td>7</td>
-                <td>7</td>
-                <td>0</td>
-                <td>238</td>
-                <td>45</td>
-                <td>34.00</td>
-                <td>186</td>
-                <td>127.95</td>
-                <td>0</td>
-                <td>0</td>
-                <td>25</td>
-                <td>3</td>
-            </tr>
-           
-        
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="https://scores.iplt20.com/ipl/playerimages/Sai%20Sudharsan.png?v=4" alt=""
+                    style="height: 5em;">Sai Sudharsan</td>
+
+            <td>7</td>
+            <td>7</td>
+            <td>0</td>
+            <td>238</td>
+            <td>45</td>
+            <td>34.00</td>
+            <td>186</td>
+            <td>127.95</td>
+            <td>0</td>
+            <td>0</td>
+            <td>25</td>
+            <td>3</td>
+        </tr>
+
+
     </table>
-    <div class="foot">
-
-    <ul>
-        <li><h2>TEAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GUIDELINE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT</h2></li>
-
-        <li>chennai superking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPL code of conduct for match official&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact us</li>
-
-        <li>Delhi Capitals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anti corruption policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brand and Production Guidelines&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sponsirship</li>
-
-        <li>Gujrat Titans&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anti dropping policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Governing council&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;privacy policy</li>
-        <li>Kolkata Knight Riders&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspTUE Application form&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match playing conditions</li>
-    </ul>
-</div>
-    
-    
+    <footer style="background-color: black;" class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="lazy" style="padding-left: 40px;" src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt="">
+            <small style="padding-left: 50px; color: antiquewhite !important;" class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>

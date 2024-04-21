@@ -1,0 +1,53 @@
+body::-webkit-scrollbar{
+    width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #b2b2da;
+}
+body::-webkit-scrollbar-thumb{
+    background:#6649b8;
+}
+
+.prev:hover .next:hover {
+    color: #b2b2da;
+    background-color: rgb(100, 114, 100);
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease !important; /* Add transition for smooth animation */
+  }
+  
+  .slides img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease !important; /* Add transition for smooth animation */
+    flex-shrink: 0;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
