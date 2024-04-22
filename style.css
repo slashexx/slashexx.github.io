@@ -51,3 +51,13 @@ body::-webkit-scrollbar-thumb{
     right: 0;
   }
   
+
+  .team-stats{
+    display : flex;
+    justify-content : center;
+    color : white;
+  }
+
+  #live-score {
+    color : green !important;
+  }
