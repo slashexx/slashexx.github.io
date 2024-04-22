@@ -15,9 +15,9 @@ This project aims to replicate the key features and functionalities of the offic
 - JavaScript
 - Github pages for hosting the website
 
-  # How to Use
+# How to Use
 
-  To visit the website, simple visit [https://slashexx.github.io](https://slashexx.github.io) in your web browser.
+To visit the website, simple visit [https://slashexx.github.io](https://slashexx.github.io) in your web browser.
 
 # Contributors
 
